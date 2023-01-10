@@ -2230,8 +2230,6 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  max-width: unset;
-  margin: unset;
 }
 
 @media screen and (min-width: 990px) {
@@ -2244,11 +2242,9 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'navigation heading icons';
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'heading navigation icons';
+    grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
-    position: absolute;
-    width: 100%;
   }
 
   .header--top-center {
@@ -2273,20 +2269,6 @@ input[type='checkbox'] {
 
 .header > .header__heading-link {
   line-height: 0;
-}
-
-@media screen and (max-width: 975px){
-  .desktop-logo {
-    display: unset;
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 975px){
-  .mobile-logo {
-    display: unset;
-    display: none !important;
-  }
 }
 
 .header__heading,
@@ -2330,7 +2312,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    justify-self: center;
+    justify-self: start;
   }
 
   .header--top-center .header__heading-link,
@@ -2642,8 +2624,12 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  /* text-decoration: underline; */
+  text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+
+.header__menu-item:hover .header__active-menu-item {
+  text-decoration-thickness: 0.2rem;
 }
 
 .header__submenu {

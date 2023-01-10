@@ -36,6 +36,7 @@
       ],
       "settings": {
         "image": "{{ shop.brand.cover_image }}",
+        "image_2": "shopify:\/\/shop_images\/image_12_502147fe-7957-4f32-bfc9-fc37321c097e.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,

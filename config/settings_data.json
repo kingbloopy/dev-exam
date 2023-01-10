@@ -107,7 +107,7 @@
             "type": "announcement",
             "settings": {
               "text": "FREE SHIPPING ON ALL ORDERS OVER $150",
-              "color_scheme": "background-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
@@ -122,9 +122,9 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
+          "logo": "shopify:\/\/shop_images\/SWDN_d7bb751c-02ff-42fd-b48d-821fa1449d77.png",
           "logo_width": 90,
-          "logo_position": "top-center",
+          "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
@@ -323,7 +323,6 @@
             "logo": "{{ shop.brand.logo }}",
             "logo_width": 90,
             "logo_position": "middle-left",
-            "mobile_logo": "{{ shop.brand.mobile_logo }}",
             "menu": "main-menu",
             "show_line_separator": true,
             "enable_sticky_header": true,

@@ -904,9 +904,6 @@
           },
           "info": "Position is automatically optimized for mobile."
         },
-        "mobile_logo": {
-          "label": "Mobile Logo image"
-        },
         "menu": {
           "label": "Menu"
         },
