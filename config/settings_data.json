@@ -323,6 +323,7 @@
             "logo": "{{ shop.brand.logo }}",
             "logo_width": 90,
             "logo_position": "middle-left",
+            "mobile_logo": "{{ shop.brand.mobile_logo }}",
             "menu": "main-menu",
             "show_line_separator": true,
             "enable_sticky_header": true,
