@@ -107,7 +107,7 @@
             "type": "announcement",
             "settings": {
               "text": "FREE SHIPPING ON ALL ORDERS OVER $150",
-              "color_scheme": "inverse",
+              "color_scheme": "background-1",
               "link": ""
             }
           }
@@ -122,9 +122,9 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/SWDN_d7bb751c-02ff-42fd-b48d-821fa1449d77.png",
+          "logo": "{{ shop.brand.logo }}",
           "logo_width": 90,
-          "logo_position": "middle-left",
+          "logo_position": "top-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
