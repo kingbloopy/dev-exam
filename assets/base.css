@@ -2630,7 +2630,7 @@ details[open] > .header__submenu {
   letter-spacing: 0.4rem;
 }
 
-@media screen and (max-width: 1215px){
+@media screen and (max-width: 1220px){
   .header__menu-item span {
     letter-spacing: 0.1rem;
     font-size: 12px;
