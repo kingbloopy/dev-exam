@@ -1,0 +1,140 @@
+{{ 'section-column-content.css' | asset_url | stylesheet_tag }}
+
+<div class="column-content-container {% if section.settings.content_side == 'right' %} reverse {% endif %}">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | image_url: width: 800 | image_tag:
+        loading: 'lazy',
+        widths: '375, 550, 750, 1100, 1500, 1780',
+        alt: section.settings.image.label | escape
+      }}
+  {% else %}
+    <div class="placeholder">
+  {% endif %}
+
+  <div class="content-container">
+    <div class="inner-content-container">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2>{{ block.settings.content_title }}</h2>
+          {% when 'text' %}
+            <span>{{ block.settings.content_description }}</span>
+          {% when 'buttons' %}
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.button_label_1 != blank -%}
+                  <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+                {%- endif -%}
+                {%- if block.settings.button_label_2 != blank -%}
+                  <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+                {%- endif -%}
+              </div>
+        {%- endcase -%}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Two Column Content",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Content Image"
+    },
+    {
+      "type": "select",
+      "id": "content_side",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right",
+      "label": "Content Display",
+      "info": "Select whether image displays on left or right side."
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Content Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "content_title",
+          "default": "A Tale of Invention",
+          "label": "Content Title"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Content Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "content_description",
+          "default": "In 2019 focus shifted. Our goal became not only to change the way we dress, but also how we perceive the world.",
+          "label": "Content Description"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_1",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        }
+      ]
+    }
+  ],
+  
+  "presets": [
+    {
+      "name": "Two Column Content",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

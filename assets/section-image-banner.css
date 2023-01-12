@@ -399,6 +399,10 @@
   margin-bottom: 0;
 }
 
+.banner__heading > span {
+  font-family: 'Pragmatica';
+}
+
 .banner__box .banner__heading + * {
   margin-top: 1rem;
 }

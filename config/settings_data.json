@@ -122,9 +122,10 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/SWDN_d7bb751c-02ff-42fd-b48d-821fa1449d77.png",
+          "logo": "shopify:\/\/shop_images\/SWDN.png",
           "logo_width": 90,
           "logo_position": "middle-left",
+          "mobile_logo": "shopify:\/\/shop_images\/SWDN_d7bb751c-02ff-42fd-b48d-821fa1449d77.png",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
@@ -136,34 +137,6 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
-        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
