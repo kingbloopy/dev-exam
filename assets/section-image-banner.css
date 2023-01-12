@@ -116,7 +116,6 @@
   }
 
   .banner__content.banner__content--bottom-center {
-    align-items: flex-end;
     justify-content: center;
   }
 
@@ -284,7 +283,6 @@
   }
 
   .banner__content--bottom-center {
-    align-items: flex-end;
     justify-content: center;
   }
 
@@ -397,6 +395,10 @@
 
 .banner__heading {
   margin-bottom: 0;
+}
+
+.banner__heading > span {
+  font-family: 'Pragmatica';
 }
 
 .banner__box .banner__heading + * {
