@@ -3,6 +3,12 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "cc5af27c-c704-4571-b609-0962fd412430": {
+          "type": "small_text",
+          "settings": {
+            "small_text": "NEW SEASON"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -30,6 +36,7 @@
         }
       },
       "block_order": [
+        "cc5af27c-c704-4571-b609-0962fd412430",
         "heading",
         "text",
         "button"
@@ -40,7 +47,7 @@
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",

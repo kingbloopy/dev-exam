@@ -1,6 +1,9 @@
+
+<script defer type="module" src="{{ "cart-tool-tip.bundle.js" | asset_url }}"></script>
+
 {%- liquid
   if cart == empty
-    render 'icon-cart-empty'
+    render 'react-cart-tool-tip'
   else
     render 'icon-cart'
   endif
