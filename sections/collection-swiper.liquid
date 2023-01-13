@@ -1,0 +1,83 @@
+<script>
+  window["{{ section.id }}"] = {
+    collection_name: {{ section.settings.collection_name | json }},
+    collection_description: {{ section.settings.collection_description | json }},
+    blocks: {{ section.blocks }}
+  }
+</script>
+
+<div id="react-collection-swiper" data-section-id="{{ section.id }}"></div>
+
+
+{% schema %}
+{
+  "name": "Collection Swiper",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "collection_name",
+      "label": "Collection Name"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_description",
+      "label": "Collection Description"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "image_picker",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "Image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_1",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        }
+      ]
+    }
+  ],
+  
+  "presets": [
+    {
+      "name": "Collection Swiper",
+      "blocks": [
+        {
+          "type": "buttons"
+        },
+        {
+          "type": "image_picker"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
