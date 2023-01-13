@@ -56,6 +56,32 @@
         "show_text_below": false
       }
     },
+    "fe664ebe-3ff8-446e-8411-7d2a9103f179": {
+      "type": "collection-swiper",
+      "blocks": {
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-0": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP WOMENS",
+            "button_link_1": "shopify:\/\/collections",
+            "button_style_secondary_1": false
+          }
+        },
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1": {
+          "type": "image_picker",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-0",
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1"
+      ],
+      "settings": {
+        "collection_name": "SPRING 2022",
+        "collection_description": "They in the dark, found light brighter than many ever see."
+      }
+    },
     "4e0d1d58-9277-477e-a186-acda370f0cc7": {
       "type": "column-content",
       "blocks": {
@@ -120,6 +146,7 @@
   },
   "order": [
     "image_banner",
+    "fe664ebe-3ff8-446e-8411-7d2a9103f179",
     "4e0d1d58-9277-477e-a186-acda370f0cc7",
     "featured_collection"
   ]

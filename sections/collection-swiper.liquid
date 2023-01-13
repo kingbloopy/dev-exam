@@ -1,13 +1,28 @@
 <script>
-  window["{{ section.id }}"] = {
-    collection_name: {{ section.settings.collection_name | json }},
-    collection_description: {{ section.settings.collection_description | json }},
-    blocks: {{ section.blocks }}
+  window.__myData = {
+    collection_name: '{{ section.settings.collection_name }}',
+    collection_description: '{{ section.settings.collection_description }}',
+    images: [
+      {% for block in section.blocks %}
+        {% if block.type == 'image_picker' %}
+        {
+          src: "{{ block.settings.image.src | img_url: '1200px' }}"
+          },
+        {% endif %}
+      {% endfor %}
+      ],
+      linkInfo: {
+        {% for block in section.blocks %}
+          {% if block.type == 'link' %}
+            link_text: "{{ block.settings.link_text | escape }}",
+            link_url: "{{ block.settings.link_url }}",
+        {% endif %}
+      {% endfor %}
+    }
   }
 </script>
 
-<div id="react-collection-swiper" data-section-id="{{ section.id }}"></div>
-
+<div id="react-collection-swiper"></div>
 
 {% schema %}
 {
@@ -34,33 +49,26 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "Image",
+          "id": "image",
           "label": "Image"
         }
       ]
     },
     {
-      "type": "buttons",
-      "name": "t:sections.image-banner.blocks.buttons.name",
+      "type": "link",
+      "name": "Collection Link",
       "limit": 1,
       "settings": [
         {
           "type": "text",
-          "id": "button_label_1",
-          "default": "Button label",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
-          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          "id": "link_text",
+          "default": "SHOP WOMENS",
+          "label": "Link label"
         },
         {
           "type": "url",
-          "id": "button_link_1",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary_1",
-          "default": false,
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+          "id": "link_url",
+          "label": "Link Url"
         }
       ]
     }
@@ -71,7 +79,7 @@
       "name": "Collection Swiper",
       "blocks": [
         {
-          "type": "buttons"
+          "type": "link"
         },
         {
           "type": "image_picker"
