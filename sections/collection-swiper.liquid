@@ -13,7 +13,7 @@
       ],
       linkInfo: {
         {% for block in section.blocks %}
-          {% if block.type == 'link' %}
+          {% if block.type == 'url' %}
             link_text: "{{ block.settings.link_text | escape }}",
             link_url: "{{ block.settings.link_url }}",
         {% endif %}
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "type": "link",
+      "type": "url",
       "name": "Collection Link",
       "limit": 1,
       "settings": [
@@ -79,7 +79,7 @@
       "name": "Collection Swiper",
       "blocks": [
         {
-          "type": "link"
+          "type": "url"
         },
         {
           "type": "image_picker"
