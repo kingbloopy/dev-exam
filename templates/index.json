@@ -49,6 +49,40 @@
         "show_text_below": false
       }
     },
+    "4e0d1d58-9277-477e-a186-acda370f0cc7": {
+      "type": "column-content",
+      "blocks": {
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-0": {
+          "type": "heading",
+          "settings": {
+            "content_title": "A Tale of Invention"
+          }
+        },
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-1": {
+          "type": "text",
+          "settings": {
+            "content_description": "In 2019 focus shifted. Our goal became not only to change the way we dress, but also how we perceive the world."
+          }
+        },
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-0",
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-1",
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_7.jpg",
+        "content_side": "right"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -79,6 +113,7 @@
   },
   "order": [
     "image_banner",
+    "4e0d1d58-9277-477e-a186-acda370f0cc7",
     "featured_collection"
   ]
 }

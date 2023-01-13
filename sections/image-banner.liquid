@@ -90,6 +90,8 @@
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
+          {%- when 'small_text' -%}
+            <span class="small-text">{{ block.settings.small_text }}</span>
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
@@ -305,6 +307,19 @@
     }
   ],
   "blocks": [
+    {
+      "type": "small_text",
+      "name": "Small Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "small_text",
+          "default": "NEW SEASON",
+          "label": "Small Text"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
