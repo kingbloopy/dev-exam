@@ -1,7 +1,36 @@
-
-const merge = require("webpack-merge")
-const common = require("./webpack.common.js")
+const { merge } = require('webpack-merge')
+const TerserPlugin = require('terser-webpack-plugin') // included in webpack 5, no need to add to package.json
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
-  mode: "production"
+  mode: 'production',
+  performance: {
+    hints: false
+  },
+  module: {
+    rules: [
+
+    ]
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      /**
+       * docs: https://webpack.js.org/plugins/terser-webpack-plugin
+       */
+      new TerserPlugin({
+        terserOptions: {
+          format: {
+            comments: /@license/i // preserve license comments
+          }
+        },
+        extractComments: false
+      }),
+      /**
+       * docs: https://webpack.js.org/plugins/css-minimizer-webpack-plugin
+       */
+      new CssMinimizerPlugin()
+    ]
+  }
 })

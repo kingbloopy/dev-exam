@@ -1,5 +1,8 @@
 import React from "react";
 
+import 'swiper/css';
+
+
 const CollectionSwiper = ({ props }) => {
   const { collection_name, collection_description, images, linkInfo } = props;
 
