@@ -101,6 +101,18 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fashion-model-in-pink.jpg"
           }
+        },
+        "d6518378-09c1-4273-9cc2-928484a7b053": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-model-perched-on-a-stool-smiles.jpg"
+          }
+        },
+        "f7a95e1b-1b52-4b9d-8acc-3a298b9a2607": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg"
+          }
         }
       },
       "block_order": [
@@ -110,7 +122,9 @@
         "6c022872-2898-4f39-8280-de94969b999e",
         "57302e98-1ca3-4402-8f5d-70200300746b",
         "4086b01a-c11f-47b0-93ba-2a796fa95d60",
-        "3f08a4a1-af0d-46f3-acdf-0fdb5b0a880c"
+        "3f08a4a1-af0d-46f3-acdf-0fdb5b0a880c",
+        "d6518378-09c1-4273-9cc2-928484a7b053",
+        "f7a95e1b-1b52-4b9d-8acc-3a298b9a2607"
       ],
       "settings": {
         "collection_name": "SPRING 2022",
@@ -154,26 +168,26 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "SPRING 2022",
+        "title": "THE NEW EXPRESSION",
         "heading_size": "h2",
-        "description": "<p>They, in the dark found light, brighter than many ever see.<\/p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 28,
         "padding_bottom": 36
       }
