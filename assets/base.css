@@ -11,6 +11,14 @@
   .color-background-1 .header {
     --color-foreground: var(--color-base-background-1);
   }
+
+  .dark-header {
+    background-color: black;
+  }
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 .color-background-2 {
