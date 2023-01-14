@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
-  width: 100%;
+  width: 300px;
+  /* width: 100%; */
   padding: 0px 20px 20px 20px;
 }
 
@@ -34,26 +34,22 @@
   .collection-swiper {
     flex-direction: column;
   }
-
-  .collection-info-container {
-    display: flex;
-    justify-content: center;
-  }
 }
 
-.carousel-container {
-  background-color: red;
+.collection-info-container {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+}
+.carousel-container {
+  /* max-width: 1300px;
+  width: 100%; */
   overflow: hidden;
 }
 
-.carousel-item {
-  height: 20rem;
-  min-width: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+.carousel-img {
+  max-width: 100%;
+    height: auto;
+    width: auto\9;
+    aspect-ratio: 2/3;
+  object-fit: cover;
 }

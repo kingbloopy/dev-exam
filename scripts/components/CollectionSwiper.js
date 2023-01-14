@@ -1,22 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Carousel from 'react-grid-carousel'
 
 const CollectionSwiper = ({ props }) => {
   const { collection_name, collection_description, images, linkInfo } = props;
-  const data = ['1', '2', '3', '4'];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselInfiniteScroll = () => {
-    if (currentIndex === data.length-1){
-      return setCurrentIndex(0);
-    }
-    return setCurrentIndex(currentIndex+1);
-  }
-
-  useEffect(() => {
-    const interval = setInterval(() => {carouselInfiniteScroll()}, 3000);
-    return () => clearInterval(interval);
-  });
-
-  console.log(props);
 
   return (
     <div className="collection-swiper">
@@ -29,20 +15,13 @@ const CollectionSwiper = ({ props }) => {
       </div>
 
       <div className="carousel-container">
-        {images.map((image, i) => (
-          <img 
-            className="carousel-item"
-            style={{ transform: `translate(-${currentIndex * 100}%)` }} 
-            key={i} 
-            src={image.src}/>
-        ))}
-        {/* { data.map((item, index) => (
-          <h1
-          className="carousel-item"
-          style={{transform: `translate(-${currentIndex * 100}%)`}}
-          key={index}
-          >{item}</h1>
-        ))} */}
+        <Carousel cols={4} rows={1} gap={10} loop>
+          {images.map((image, i) => (
+          <Carousel.Item>
+            <img className="carousel-img" key={i} src={image.src} />
+          </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
