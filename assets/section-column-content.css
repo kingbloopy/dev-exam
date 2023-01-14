@@ -3,9 +3,6 @@
   justify-content: space-between;
 }
 
-.column-content-container.reverse {
-  flex-direction: row-reverse;
-}
 
 .column-content-container > img {
   width: 50vw;
@@ -42,11 +39,15 @@
 
 @media screen and (max-width: 750px) {
   .column-content-container {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .column-content-container > img {
     width: 100vw;
     aspect-ratio: 1/1;
     height: auto;
   }
+}
+
+.column-content-container.reverse {
+  flex-direction: row-reverse;
 }

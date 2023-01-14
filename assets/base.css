@@ -885,6 +885,11 @@ summary::-webkit-details-marker {
   margin: 3rem 0 2rem;
 }
 
+.collection__title > .title {
+  text-align: center;
+  font-family: 'Pragmatica';
+}
+
 .title-wrapper-with-link .title {
   margin: 0;
 }
