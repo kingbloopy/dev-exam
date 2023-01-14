@@ -11,28 +11,17 @@ const CollectionSwiper = ({ props }) => {
   const { collection_name, collection_description, images, linkInfo } = props;
 
   return (
-    <div className="test">
-      <div>
-        <h2>{collection_name}</h2>
-        <span>{collection_description}</span>
-          <a href={linkInfo.link_url}>{linkInfo.link_text}</a>
-      </div>
-
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={4}
-        modules={[Lazy, Navigation]}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-      {images.map((image, i) => (
-        <SwiperSlide>
-          <img key={i} src={image.src}/>
-        </SwiperSlide>
-        ))}
-      </Swiper>
-
-    </div>
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+    </Swiper>
   );
 }
 

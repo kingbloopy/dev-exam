@@ -12,7 +12,6 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"]
       },
-      { test: /\.(css|postcss)$/i },
       { 
         test: /\.s[ac]ss$/i, 
         exclude: /node_modules/,
