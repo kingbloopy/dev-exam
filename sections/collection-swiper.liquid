@@ -8,7 +8,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'image_picker' %}
         {
-          src: "{{ block.settings.image.src | img_url: '1200px' }}"
+          src: "{{ block.settings.image.src | img_url: '800x' }}"
           },
         {% endif %}
       {% endfor %}

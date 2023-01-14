@@ -6,11 +6,13 @@ const CollectionSwiper = ({ props }) => {
   console.log(props);
 
   return (
-    <div className="test">
-      <div>
-        <h2>{collection_name}</h2>
-        <span>{collection_description}</span>
+    <div className="collection-swiper">
+      <div className="collection-info-container">
+        <div className="collection-info-inner">
+          <h2>{collection_name}</h2>
+          <span>{collection_description}</span>
           <a href={linkInfo.link_url}>{linkInfo.link_text}</a>
+        </div>
       </div>
 
       {images.map((image, i) => (
