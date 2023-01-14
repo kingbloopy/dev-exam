@@ -56,26 +56,61 @@
         "show_text_below": false
       }
     },
-    "fe664ebe-3ff8-446e-8411-7d2a9103f179": {
+    "3e508b9a-7ced-408a-bc15-86181f5412c5": {
       "type": "collection-swiper",
       "blocks": {
-        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-0": {
-          "type": "buttons",
+        "43cdfbaf-7a7b-4c22-9b96-54af6a1049e6": {
+          "type": "url",
           "settings": {
-            "button_label_1": "SHOP WOMENS",
-            "button_link_1": "shopify:\/\/collections",
-            "button_style_secondary_1": false
+            "link_text": "SHOP WOMENS",
+            "link_url": "shopify:\/\/collections"
           }
         },
-        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1": {
+        "0acade8a-4213-4665-8543-2197b1a60bef": {
           "type": "image_picker",
           "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-portrait.jpg"
+          }
+        },
+        "74e75ff5-a6e6-4c5d-ba28-097c606b0120": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg"
+          }
+        },
+        "6c022872-2898-4f39-8280-de94969b999e": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
+          }
+        },
+        "57302e98-1ca3-4402-8f5d-70200300746b": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/studded-flats.jpg"
+          }
+        },
+        "4086b01a-c11f-47b0-93ba-2a796fa95d60": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg"
+          }
+        },
+        "3f08a4a1-af0d-46f3-acdf-0fdb5b0a880c": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-pink.jpg"
           }
         }
       },
       "block_order": [
-        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-0",
-        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1"
+        "43cdfbaf-7a7b-4c22-9b96-54af6a1049e6",
+        "0acade8a-4213-4665-8543-2197b1a60bef",
+        "74e75ff5-a6e6-4c5d-ba28-097c606b0120",
+        "6c022872-2898-4f39-8280-de94969b999e",
+        "57302e98-1ca3-4402-8f5d-70200300746b",
+        "4086b01a-c11f-47b0-93ba-2a796fa95d60",
+        "3f08a4a1-af0d-46f3-acdf-0fdb5b0a880c"
       ],
       "settings": {
         "collection_name": "SPRING 2022",
@@ -146,7 +181,7 @@
   },
   "order": [
     "image_banner",
-    "fe664ebe-3ff8-446e-8411-7d2a9103f179",
+    "3e508b9a-7ced-408a-bc15-86181f5412c5",
     "4e0d1d58-9277-477e-a186-acda370f0cc7",
     "featured_collection"
   ]
