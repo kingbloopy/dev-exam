@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousel from 'react-grid-carousel'
+import '../styles/CollectionSwiper-styles.scss';
 
 const LeftArrow = () => (
   <svg className="left-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,15 +19,15 @@ const CollectionSwiper = ({ props }) => {
 
   return (
     <div className="collection-swiper">
-      <div className="collection-info-container">
-        <div className="collection-info-inner">
+      <div className="collection-swiper__info-container">
+        <div className="collection-swiper__info-container__inner">
           <h2>{collection_name}</h2>
           <span>{collection_description}</span>
           <a href={linkInfo.link_url}>{linkInfo.link_text}</a>
         </div>
       </div>
 
-      <div className="carousel-container">
+      <div className="collection-swiper__carousel-container">
         <Carousel autoplay={4000} mobileBreakpoint={875} arrowLeft={LeftArrow} arrowRight={RightArrow} cols={4} rows={1} gap={10} loop>
           {images.map((image, i) => (
           <Carousel.Item>
