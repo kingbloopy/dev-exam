@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "cc5af27c-c704-4571-b609-0962fd412430": {
+          "type": "small_text",
+          "settings": {
+            "small_text": "NEW SEASON"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The New Expression of Color",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Introducing the SS22 collection: \nharmonious hues and illuminating shades",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP WOMENS",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "SHOP MENS",
+            "button_link_2": "shopify:\/\/collections\/all",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "cc5af27c-c704-4571-b609-0962fd412430",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "{{ shop.brand.cover_image }}",
+        "image_2": "shopify:\/\/shop_images\/image_12_502147fe-7957-4f32-bfc9-fc37321c097e.png",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "fe664ebe-3ff8-446e-8411-7d2a9103f179": {
+      "type": "collection-swiper",
+      "blocks": {
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg"
+          }
+        },
+        "7265e350-b049-4741-926c-f616a521e857": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-pink.jpg"
+          }
+        },
+        "b6a25d35-60a6-4a33-bbfd-fc712032adde": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/studded-flats.jpg"
+          }
+        },
+        "dc2e1f73-69a9-4829-a4bb-010119162f04": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
+          }
+        },
+        "31334d2f-238e-4799-9da9-f26ec79e26cb": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg"
+          }
+        },
+        "34a2b0cd-d371-4588-81e9-ea18f24e363f": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-portrait.jpg"
+          }
+        },
+        "812966a8-d8be-4ced-9bb9-94d03ddaa2e9": {
+          "type": "url",
+          "settings": {
+            "link_text": "SHOP WOMENS",
+            "link_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "template--16725042757850__fe664ebe-3ff8-446e-8411-7d2a9103f179-16736349456a907a55-1",
+        "7265e350-b049-4741-926c-f616a521e857",
+        "b6a25d35-60a6-4a33-bbfd-fc712032adde",
+        "dc2e1f73-69a9-4829-a4bb-010119162f04",
+        "31334d2f-238e-4799-9da9-f26ec79e26cb",
+        "34a2b0cd-d371-4588-81e9-ea18f24e363f",
+        "812966a8-d8be-4ced-9bb9-94d03ddaa2e9"
+      ],
+      "settings": {
+        "collection_name": "SPRING 2022",
+        "collection_description": "They in the dark, found light brighter than many ever see."
+      }
+    },
+    "4e0d1d58-9277-477e-a186-acda370f0cc7": {
+      "type": "column-content",
+      "blocks": {
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-0": {
+          "type": "heading",
+          "settings": {
+            "content_title": "A Tale of Invention"
+          }
+        },
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-1": {
+          "type": "text",
+          "settings": {
+            "content_description": "In 2019 focus shifted. Our goal became not only to change the way we dress, but also how we perceive the world."
+          }
+        },
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-0",
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-1",
+        "template--16723471302874__4e0d1d58-9277-477e-a186-acda370f0cc7-1673564192344c22e6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_7.jpg",
+        "content_side": "right"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "SPRING 2022",
+        "heading_size": "h2",
+        "description": "<p>They, in the dark found light, brighter than many ever see.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "fe664ebe-3ff8-446e-8411-7d2a9103f179",
+    "4e0d1d58-9277-477e-a186-acda370f0cc7",
+    "featured_collection"
+  ]
+}
