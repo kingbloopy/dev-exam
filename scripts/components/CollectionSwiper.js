@@ -6,7 +6,7 @@ const CollectionSwiper = ({ props }) => {
   console.log(props);
 
   return (
-    <div>
+    <div className="test">
       <div>
         <h2>{collection_name}</h2>
         <span>{collection_description}</span>
