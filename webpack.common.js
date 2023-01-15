@@ -3,7 +3,7 @@ const path = require("path")
 
 module.exports = {
   entry: {
-    'cart-tool-tip': "./scripts/cart-tool-tip.js"
+    app: './src/app.js'
   },
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "assets")
-  }
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
 }
