@@ -128,7 +128,8 @@
       ],
       "settings": {
         "collection_name": "SPRING 2022",
-        "collection_description": "They in the dark, found light brighter than many ever see."
+        "collection_description": "They in the dark, found light brighter than many ever see.",
+        "collection": ""
       }
     },
     "4e0d1d58-9277-477e-a186-acda370f0cc7": {
@@ -183,7 +184,7 @@
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
         "columns_mobile": "1",

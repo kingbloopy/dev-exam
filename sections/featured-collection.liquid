@@ -62,6 +62,7 @@
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
             {% render 'card-product',
               card_product: product,
+              collection_name: section.settings.collection_name,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
@@ -116,6 +117,12 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "collection_name",
+      "default": "COLLECTION NAME",
+      "label": "Collection Name"
     },
     {
       "type": "select",
