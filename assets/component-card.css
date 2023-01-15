@@ -8,6 +8,9 @@
 @media screen and (min-width: 1000px){
   .quick-add {
     visibility: hidden;
+    position: absolute !important;
+    top: 55%;
+    width: 100%;
   }
   
   .card-wrapper:hover .quick-add {
@@ -327,8 +330,8 @@
 }
 
 .color-swatch {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
 
