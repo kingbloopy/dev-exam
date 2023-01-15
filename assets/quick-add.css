@@ -1,8 +1,20 @@
 .quick-add {
-  position: relative;
   grid-row-start: 4;
   margin: 0 0 1rem;
   z-index: 1;
+}
+
+@media screen and (min-width: 1000px){
+  .quick-add {
+    visibility: hidden;
+    position: absolute !important;
+    top: 55%;
+    width: 100%;
+  }
+  
+  .card-wrapper:hover .quick-add {
+    visibility: visible;
+  }
 }
 
 .card--card .quick-add {
