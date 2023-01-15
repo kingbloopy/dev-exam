@@ -99,17 +99,6 @@
               <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}" class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
             {%- endif -%}
           </div>
-          {% comment %} {% if card_product.variants %}
-          <div class="swatch-container">
-            {% for variant in card_product.variants %}
-              {% if variant.title != 'Default' %}
-                <div class="color-swatch" style="background-color:{{ variant.title }};">
-                  <span >{{ variant.title }}</span>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-          {% endif %} {% endcomment %}
         </div>
       </div>
       <div class="card__content">
