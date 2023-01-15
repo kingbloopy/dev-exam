@@ -3,6 +3,7 @@
   window.__myData = {
     collection_name: '{{ section.settings.collection_name }}',
     collection_description: '{{ section.settings.collection_description }}',
+    collection_url: '{{ section.settings.collection }}',
     images: [
       {% for block in section.blocks %}
         {% if block.type == 'image_picker' %}
@@ -40,6 +41,11 @@
       "type": "textarea",
       "id": "collection_description",
       "label": "Collection Description"
+    },
+    {
+      "type": "url",
+      "id": "collection",
+      "label": "Collection Url"
     }
   ],
 
