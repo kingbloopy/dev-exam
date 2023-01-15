@@ -5,6 +5,17 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 1000px){
+  .quick-add {
+    visibility: hidden;
+  }
+  
+  .card-wrapper:hover .quick-add {
+    visibility: visible;
+  }
+}
+
+
 .card {
   text-align: var(--card-text-alignment);
   text-decoration: none;
