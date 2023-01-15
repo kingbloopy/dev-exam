@@ -15,7 +15,6 @@
   }
 }
 
-
 .card {
   text-align: var(--card-text-alignment);
   text-decoration: none;
@@ -325,4 +324,20 @@
 
 .caption-with-letter-spacing {
   margin-bottom: 10px;
+}
+
+.color-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.color-swatch > span {
+  visibility: hidden;
+}
+
+.swatch-container {
+  display: flex;
+  gap: 8px;
+  padding-top: 15px;
 }
